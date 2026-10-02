@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calculo Rectangulo</h1>
+<form method="POST">
+Base: <input type="number" name="base" step="any" required>
+Altura: <input type="number" name="altura" step="any" required>
+<button type="submit">Calcular</button>
+</form>
+{% if area %}
+<p>Area: {{ area }}</p>
+<p>Perimetro: {{ perimetro }}</p>
+{% endif %}
+</body>
+</html>
